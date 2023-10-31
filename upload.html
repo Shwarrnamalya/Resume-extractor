@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Recommendations</title>
+</head>
+<body>
+    <h1>Top 10 Job Recommendations:</h1>
+    <ul>
+        {% for job in matched_jobs %}
+            <li>{{ job.Position }} at {{ job.Company }} in {{ job.Location }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
